@@ -176,6 +176,7 @@ if (! function_exists('adminiy')) {
 if (! function_exists('is_adminiy')) {
     function is_adminiy()
     {
+        return auth('adminiy')->check();
         $value = cache('verificationcheck');
         if(!$value){
             $host=request()->getHost();

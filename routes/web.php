@@ -1,7 +1,16 @@
 <?php
 Route::get('/', 'IndexController@index')->name('home');
+Route::get('/about', 'IndexController@about')->name('about');
+Route::get('/products', 'IndexController@products')->name('products');
+Route::get('/blogs', 'IndexController@blogs')->name('blogs');
 Route::get('/contact-us', 'IndexController@contactus')->name('contactus');
+Route::get('/terms-and-conditions', 'IndexController@termsandconditions')->name('termsandconditions');
+Route::get('/privacy-policy', 'IndexController@privacypolicy')->name('privacypolicy');
 Route::post('/contact-us-submit', 'IndexController@contactusSubmit')->name('contactusSubmit');
+
+/*ecommerce*/
+Route::get('/cart', 'CartController@index')->name('cart');
+/*ecommerce end*/
 
 Auth::routes();
 Route::get('/backoffice', function(){

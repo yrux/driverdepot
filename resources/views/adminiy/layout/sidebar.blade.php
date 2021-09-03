@@ -40,8 +40,20 @@
                                 <li class="deals_product"><a href="{{url('adminiy/listing/products-listing#product_type=deals')}}">Deals</a></li>
                             </ul>
                         </li> -->
+                        <li class="navigation__sub {{in_array($currentMenu,$underMenuActive)?'navigation__sub--active navigation__sub--toggled flag_here':''}}">
+                            <a href="javascript:void(0)"><i class="zmdi zmdi-shopping-basket"></i><span data-toggle="tooltip" title="Manage Products/Orders/Categories/Abandoned Carts from here">Manage Ecommerce</span></a>
+                            <ul>
+                                <li class="TESTFLAG_flag"><a href="#">Manage Products</a></li>
+                                <li class="TESTFLAG_flag"><a href="#">Manage Orders</a></li>
+                                <li class="TESTFLAG_flag"><a href="#">Manage Categories</a></li>
+                                <li class="TESTFLAG_flag"><a href="#">Manage Coupons</a></li>
+                                <li class="TESTFLAG_flag"><a href="#">Abandoned Carts</a></li>
+                                <li class="TESTFLAG_flag"><a href="#">Inventory Report</a></li>
+                                <li class="TESTFLAG_flag"><a href="#">Sales Report</a></li>
+                            </ul>
+                        </li>
                         <!--product management end-->
-                        <?php 
+                        <!-- <?php 
                             $underMenuActive=array('m_flag_ytmenu'); 
                             $currentMenu=isset($menuArray)?$menuArray[0]:'';
                         ?>
@@ -50,7 +62,7 @@
                             <ul>
                                 <li class="TESTFLAG_flag"><a href="{{url('adminiy/listing/m_flag-listing#flag_type=TESTFLAG')}}">TEST FLAG</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </aside>

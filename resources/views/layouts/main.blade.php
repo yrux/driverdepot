@@ -21,6 +21,5 @@
     @include('layouts.scripts')
     @yield('js')
     @include('layouts.errorhandler')
-    @include('adminiy.core.editor')
   </body>
 </html>
