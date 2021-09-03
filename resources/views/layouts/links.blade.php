@@ -1,7 +1,8 @@
-<!--compiled version of bootstrap , slick , animated etc, make sure to use the sort html team have used-->
-<link rel="stylesheet" href="{{ asset('css/all.css') }}">
-<!--style.css uncompiled so that when html team has to work , they can work without any issues-->
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('slick/slick.css')}}" />
+<link rel="stylesheet" type="text/css" href="{{asset('slick/slick-theme.css')}}" />
+<link rel="stylesheet" href="{{ asset('wow/animate.css')}}" />
+<link rel="stylesheet" href="{{ asset('css/bootstrap-grid.min.css')}}" />
+<link rel="stylesheet" href="{{ asset('css/style.css')}}" />
 <!--DNE-->
 <style>
 *[contenteditable]:focus {

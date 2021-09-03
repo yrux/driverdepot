@@ -1,6 +1,6 @@
 @extends('adminiy.layout.main')
 @section('content')
-<div class="card-demo card-redirect column size-1of2">
+<!-- <div class="card-demo card-redirect column size-1of2">
 <div class="card bg-blue card--inverse">
 <div class="card-body">
 <h4 class="card-title">Logo Management <kbd>117x110</kbd></h4>
@@ -9,7 +9,7 @@
 </div>
 </div>
 </div>
-</div>
+</div> -->
 
 <div class="card-demo card-redirect column size-1of2">
 <div class="card bg-green card--inverse">

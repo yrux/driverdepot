@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title>{{isset($title)?$title:adminiy()->name.' Adminiy '.$v}}</title>
+        <title>{{isset($title)?$title:adminiy()->name.' Panel'}}</title>
         <link rel="icon" type="image/png" href="{{asset(isset($favicon)?$favicon:'')}}">
         <link rel="icon" type="image/jpg" href="{{asset(isset($favicon)?$favicon:'')}}">
         <!-- Vendor styles -->
@@ -41,7 +41,7 @@
       @include('adminiy.layout.sidebar')
       <section class="content">
     <header class="content__title">
-        <h1>{{isset($title)?$title:adminiy()->name.' Adminiy '.$v}}</h1>
+        <h1>{{isset($title)?$title:adminiy()->name.' Panel'}}</h1>
     </header>
     <div class="card">
         @yield('content-header')

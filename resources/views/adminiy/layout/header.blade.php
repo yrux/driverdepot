@@ -8,7 +8,7 @@
             </div>
 
             <div class="header__logo hidden-sm-down">
-                <h1><a href="{{url('/adminiy')}}">{{adminiy()->name}} Adminiy {{$v}}</a></h1>
+                <h1><a href="{{url('/adminiy')}}">{{adminiy()->name}} Panel</a></h1>
             </div>
 
             <form class="search" method="GET" action="{{route('adminiy.mainsearch')}}">

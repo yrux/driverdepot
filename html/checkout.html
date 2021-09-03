@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/slick/slick-theme.css"
+    />
+
+    <!-- WOW -->
+    <link rel="stylesheet" href="assets/wow/animate.css" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>The Driver Depot</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="topNavWrapper">
+        <div class="container">
+          <div class="topNav">
+            <ul>
+              <li>
+                <a href="mailto:casianicontreras@gmail.com">
+                  <i class="fas fa-envelope"></i> casianicontreras@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+6023140841">
+                  <i class="fas fa-phone-alt"></i> +602-314-0841
+                </a>
+              </li>
+            </ul>
+            <ul class="topNav__links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="navWrapper">
+        <div class="container">
+          <nav class="nav">
+            <a href="index.html" class="nav__logo">
+              The <span>Driver</span> Depot
+            </a>
+            <ul>
+              <li>
+                <form action="#">
+                  <input type="text" placeholder="Search your products..." />
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+              </li>
+              <li class="nav__favourite">
+                <a href="#">
+                  <i class="far fa-heart"></i>
+                  <div class="badge">0</div>
+                </a>
+              </li>
+              <li class="nav__cart">
+                <a href="cart.html">
+                  $0.00
+                  <i class="fas fa-shopping-basket"></i>
+                  <div class="badge">0</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Page Title -->
+    <div class="pageTitle wow fadeInDown">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Checkout</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Checkout -->
+    <div class="container checkout">
+      <form action="#">
+        <div class="row">
+          <div class="col-12 col-lg-7 wow zoomIn">
+            <div class="checkout__billingForm">
+              <h4>Billing Information</h4>
+              <div>
+                <label for="firstName">First Name <span>*</span></label>
+                <input type="text" name="firstName" id="firstName" />
+              </div>
+              <div>
+                <label for="lastName">Last Name <span>*</span></label>
+                <input type="text" name="lastName" id="lastName" />
+              </div>
+              <div>
+                <label for="email">Email <span>*</span></label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div>
+                <label for="phone">Phone <span>*</span></label>
+                <input type="text" name="phone" id="phone" />
+              </div>
+              <div>
+                <label for="company">Company (optional)</label>
+                <input type="text" name="company" id="company" />
+              </div>
+              <div>
+                <label for="address">Address <span>*</span></label>
+                <input type="text" name="address" id="address" />
+              </div>
+              <div>
+                <label for="postal">Postal Code <span>*</span></label>
+                <input type="text" name="postal" id="postal" />
+              </div>
+              <div>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" />
+              </div>
+              <div>
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                  <option value="USA">USA</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 wow fadeInUp">
+            <div class="checkout__orderOverview">
+              <h4>Order Overview</h4>
+              <div>
+                <span>Sub Total</span>
+                <span>$53.97</span>
+              </div>
+              <div>
+                <span>Discount Vouchers</span>
+                <span>$0.00</span>
+              </div>
+              <div>
+                <span>Shipping</span>
+                <span>$0.00</span>
+              </div>
+              <div class="checkout__orderOverviewTotal">
+                <span>Total</span>
+                <span>$53.97</span>
+              </div>
+            </div>
+            <div class="checkout__paymentMethod">
+              <h4>Payment Method</h4>
+              <ul class="checkout__paymentMethodRadios">
+                <li>
+                  <input type="radio" name="payment" id="cod" />
+                  <label for="cod">Cash on delivery</label>
+                </li>
+                <li>
+                  <input type="radio" name="payment" id="paypal" />
+                  <label for="paypal"
+                    >Paypal <img src="images/paypal.png" alt=""
+                  /></label>
+                </li>
+              </ul>
+              <button type="submit">Place Your Order</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Newsletter -->
+    <div class="container wow fadeInUp">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-6">
+          <div class="newsletter">
+            <h2>Sign Up Now &amp; Get 15% Off</h2>
+            <p>
+              Be the first to know about our new arrivals and exclusive offers.
+            </p>
+            <form action="#">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Type your Email"
+              />
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer wow fadeInUp">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <div class="footer__socialLinks textCenter">
+              <h4>Follow Us</h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="bx bxl-facebook bx-sm"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-twitter bx-sm"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-instagram bx-sm"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-linkedin bx-sm"></i></a>
+                </li>
+              </ul>
+            </div>
+            <ul class="footer__quickLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          ©Copyright 2021 <a href="#">The Driver Depot</a>. All Rights Reserved
+        </p>
+        <ul>
+          <li><a href="#">Terms &amp; Conditions</a>&nbsp;|&nbsp;</li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <!-- Jquery -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <!-- WOW -->
+  <script src="assets/wow/wow.min.js"></script>
+
+  <!-- Slick -->
+  <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+
+  <!-- JS -->
+  <script src="assets/js/app.js"></script>
+</html>
