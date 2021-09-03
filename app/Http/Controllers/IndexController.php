@@ -32,6 +32,15 @@ class IndexController extends Controller
         ->with('homeMenu',true);
         //->with(compact('banners','deals'))
     }
+    public function about(){
+        return view('about')->with('title','About Us')->with('aboutMenu',true);
+    }
+    public function products(){
+        return view('products')->with('title','Products')->with('productsMenu',true);
+    }
+    public function blogs(){
+        return view('blogs')->with('title','Blogs')->with('blogsMenu',true);
+    }
     public function contactus()
     {
         return view('contactus')->with('title','Contact us')->with('contactmenu',true);
